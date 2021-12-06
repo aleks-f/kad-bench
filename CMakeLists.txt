@@ -25,6 +25,7 @@
 cmake_minimum_required(VERSION 3.5)
 
 project(kademlia)
+SET(CMAKE_CONFIGURATION_TYPES "Debug;Release;RelWithDebInfo;MinSizeRel" CACHE STRING "Configs" FORCE)
 include(CTest)
 
 list(INSERT CMAKE_MODULE_PATH 0 "${PROJECT_SOURCE_DIR}/cmake")
